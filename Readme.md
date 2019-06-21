@@ -5,6 +5,9 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to display content in the Header and Footer sections when exporting ASPxGridView
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e3184/)**
+<!-- run online end -->
 
 
 <p>By default, ASPxGridViewExporter does not provide methods or properties for setting images as a header or footer for the resulting report.  <br />
