@@ -16,7 +16,7 @@
 
 ### Steps to implement:
 
-1. Add ASPxGridView and [ASPxGridViewExporter](https://documentation.devexpress.com/AspNet/DevExpress.Web.ASPxGridViewExporter.class) to a page ([Default.aspx](https://github.com/DevExpress-Examples/how-to-display-content-in-the-header-and-footer-sections-when-exporting-aspxgridview-e3184/blob/16.1.7%2B/CS/WebSite/Default.aspx)).
+1. Add ASPxGridView and [ASPxGridViewExporter](https://documentation.devexpress.com/AspNet/DevExpress.Web.ASPxGridViewExporter.class) to a page ([Default.aspx](./CS/WebSite/Default.aspx)).
 2. Add a button and handle its Click event: this button will export the grid.
 3. Create the [LinkBase](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.class) object for the header area in code behind. It will add the header to export.
 4. Handle its [CreateDetailHeaderArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateDetailHeaderArea.event) event. This event allows you to customize the header area. 
@@ -52,7 +52,7 @@
 			compositeLink.Links.AddRange(New Object() { header, link1 })
 			compositeLink.ExportToXls(stream)
 ```
-6. It is also possible to use the [PrintableComponentLinkBase.CreateReportFooterArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportFooterArea.event) and [CreateReportHeaderArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportHeaderArea.event) events to customize header/footer. This example shows how to use one of them (CreateReportFooterArea) for footer customization (see the [Default.aspx.cs](https://github.com/DevExpress-Examples/how-to-display-content-in-the-header-and-footer-sections-when-exporting-aspxgridview-e3184/blob/16.1.7%2B/CS/WebSite/Default.aspx.cs) ([VB](https://github.com/DevExpress-Examples/how-to-display-content-in-the-header-and-footer-sections-when-exporting-aspxgridview-e3184/blob/16.1.7%2B/VB/WebSite/Default.aspx.vb)) file).
+6. It is also possible to use the [PrintableComponentLinkBase.CreateReportFooterArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportFooterArea.event) and [CreateReportHeaderArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportHeaderArea.event) events to customize header/footer. This example shows how to use one of them (CreateReportFooterArea) for footer customization (see the [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) ([VB](./VB/WebSite/Default.aspx.vb)) file).
 
 
 ### See Also:
