@@ -26,7 +26,7 @@ public partial class _Default : System.Web.UI.Page {
             header.CreateDetailHeaderArea += Header_CreateDetailHeaderArea;
 
             PrintableComponentLinkBase link1 = new PrintableComponentLinkBase();
-            link1.Component = this.ASPxGridViewExporter1;
+            link1.Component = ASPxGridView1;
             link1.CreateReportFooterArea += Link1_CreateReportFooterArea;
             CompositeLinkBase compositeLink = new CompositeLinkBase(ps);
             compositeLink.Links.AddRange(new object[] { header, link1 });

@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 
@@ -13,8 +13,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="ObjectDataSource1"
-                KeyFieldName="Id">
+            <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" 
+                             DataSourceID="ObjectDataSource1" KeyFieldName="Id">
                 <Columns>
                     <dx:GridViewDataTextColumn FieldName="Id" ReadOnly="True" VisibleIndex="0">
                         <EditFormSettings Visible="False" />
@@ -27,9 +27,7 @@
             </dx:ASPxGridView>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server"
                 DataObjectTypeName="Invoice" SelectMethod="GetInvoices"
-                TypeName="InvoiceDataContext"></asp:ObjectDataSource>
-            <dx:ASPxGridViewExporter ID="ASPxGridViewExporter1" runat="server" GridViewID="ASPxGridView1">
-            </dx:ASPxGridViewExporter>
+                TypeName="InvoiceDataContext" />
             <asp:Button ID="b1" runat="server" Text="Export to PDF" OnClick="pdf_Click" />
             <asp:Button ID="b2" runat="server" Text="Export to RTF" OnClick="rtf_Click" />
             <asp:Button ID="b3" runat="server" Text="Export to XLS" OnClick="xls_Click" />
