@@ -9,12 +9,12 @@
 **[[Run Online]](https://codecentral.devexpress.com/e3184/)**
 <!-- run online end -->
 
-The [DevExpress.XtraPrinting](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting) library allows you to add header and footer in exported document in two ways:
+The [DevExpress.XtraPrinting](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting) library allows you to add a header and footer in an exported document in two ways:
 
 * Create a [printing link](https://docs.devexpress.com/WindowsForms/104/controls-and-libraries/printing-exporting/concepts/basic-terms/printing-links) for each element (header, footer, and main control) and combine them into one document.
-* Create a [printing link](https://docs.devexpress.com/WindowsForms/104/controls-and-libraries/printing-exporting/concepts/basic-terms/printing-links) for the main control and handle the link's [CreateReportHeaderArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportHeaderArea.event) and [CreateReportFooterArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportFooterArea.event) events to customize document header and footer.
+* Create a [printing link](https://docs.devexpress.com/WindowsForms/104/controls-and-libraries/printing-exporting/concepts/basic-terms/printing-links) for the main control and handle the link's [CreateReportHeaderArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportHeaderArea.event) and [CreateReportFooterArea](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraPrinting.LinkBase.CreateReportFooterArea.event) events to customize a document's header and footer.
 
-In this example, the first approach is used to create a document header, and the second approach is used to create a document footer.
+In this example, the first approach is used to create a document header, and the second to create a document footer.
 ## 1. Create a header as a separate printing link
 
 [Printing links](https://docs.devexpress.com/WindowsForms/104/controls-and-libraries/printing-exporting/concepts/basic-terms/printing-links) transforms a control's data into bricks of appropriate types, and arranges them into a printing document. To create a printing link, follow the steps below:
@@ -38,7 +38,7 @@ In this example, the first approach is used to create a document header, and the
         }
     ```
 
-## Create a footer in the grid event handler
+## Create a footer in the grid's event handler
 
 1. Create a [PrintableComponentLinkBase](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrintingLinks.PrintableComponentLinkBase) object and assign the  ASPxGridView control to the  [Component](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrintingLinks.PrintableComponentLinkBase.Component) property.
 
