@@ -6,7 +6,7 @@
 
 # Grid View for ASP.NET Web Forms - How to add content in the header and footer sections when exporting grid
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3184/)**
+**[[Run Online]](https://codecentral.devexpress.com/128539384/)**
 <!-- run online end -->
 
 The [DevExpress.XtraPrinting](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPrinting) library allows you to add a header and footer in an exported document in two ways:
