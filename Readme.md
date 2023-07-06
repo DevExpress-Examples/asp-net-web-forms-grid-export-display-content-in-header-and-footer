@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # How to display content in the Header and Footer sections when exporting ASPxGridView
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3184/)**
+**[[Run Online]](https://codecentral.devexpress.com/128539384/)**
 <!-- run online end -->
 
 ### Steps to implement:
